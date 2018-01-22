@@ -24,7 +24,13 @@ class MainActivityInstrumentationTest {
     //rule is initialized
     @Rule
     @JvmField
-    public val rule  = ActivityTestRule(MainActivity::class.java)
+    public val rule  = getRule()
+
+
+    private fun getRule(): ActivityTestRule<MainActivity> {
+        Log.e("Initalising rule","getting Mainactivity")
+        return ActivityTestRule(MainActivity::class.java)
+    }
 
 
     companion object {
