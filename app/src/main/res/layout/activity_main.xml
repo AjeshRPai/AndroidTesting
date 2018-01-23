@@ -17,12 +17,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/login_result"
-        android:hint="Username"/>
+        android:hint="@string/username_hint"/>
 
     <EditText android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Password"/>
+        android:hint="@string/password_hint"/>
 
     <LinearLayout android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -30,6 +30,6 @@
         <Button android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/login_button"
-            android:text="LOGIN"/>
+            android:text="@string/login_button"/>
     </LinearLayout>
 </LinearLayout>

@@ -3,13 +3,19 @@ package com.example.ajeshpai.androidtesting
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
 
 class MainActivity : AppCompatActivity() {
+
+    private val login_button by lazy{
+        findViewById<Button>(R.id.login_button)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         Log.e("Activity","onCreate")
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
     }
 
     override fun onStart() {

@@ -24,12 +24,21 @@ class MainActivityInstrumentationTest {
     //rule is initialized
     @Rule
     @JvmField
-    public val rule  = getRule()
+    public val rule  = ActivityTestRule(MainActivity::class.java,false,false)
+
+    private val resources by lazy {
+        rule.activity.resources
+    }
+
+
+    private val username_tobe_typed="Ajesh"
+    private val password_tobe_typed="password"
+
 
 
     private fun getRule(): ActivityTestRule<MainActivity> {
         Log.e("Initalising rule","getting Mainactivity")
-        return ActivityTestRule(MainActivity::class.java)
+        return ActivityTestRule(MainActivity::class.java,false,false)
     }
 
 
@@ -52,20 +61,19 @@ class MainActivityInstrumentationTest {
     @Before
     fun before_test_method(){
         Log.e("@Before","Hi this is run before every test function")
+        //Lets check if the hints are correct on edit texts
     }
 
 
     @Test
     fun login_valid(){
         Log.e("@Test","Performing login valid test")
-        Espresso.onView(
-                allOf(withHint("Username"),
-                        withId(R.id.user_name)))
-                .perform(ViewActions.typeText("Ajesh"))
+        Espresso.onView((withId(R.id.user_name)))
+                .perform(ViewActions.typeText(username_tobe_typed))
                 .check(matches(withText("Ajesh")))
 
         Espresso.onView(withId(R.id.password))
-                .perform(ViewActions.typeText("password"))
+                .perform(ViewActions.typeText(password_tobe_typed))
                 .check(matches(withText("password")))
 
         Espresso.onView(withId(R.id.login_button))
@@ -75,10 +83,12 @@ class MainActivityInstrumentationTest {
     @Test
     fun login_Hint(){
         Log.e("@Test","Performing login hint test")
-        Espresso.onView(allOf(
-                            withId(R.id.login_result),
-                            withText("LOGIN")))
-                .check(matches(withText("LOGIN")))
+        Espresso.onView(withId(R.id.user_name))
+                .check(matches(withHint(resources.getString(R.string.username_hint))))
+        Espresso.onView(withId(R.id.password))
+                .check(matches(withHint(resources.getString(R.string.password_hint))))
+        Espresso.onView(withId(R.id.login_button))
+                .check(matches(withText(resources.getString(R.string.login_button))))
 
     }
 
