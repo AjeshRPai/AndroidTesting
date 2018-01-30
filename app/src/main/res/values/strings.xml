@@ -2,5 +2,8 @@
     <string name="app_name">AndroidTesting</string>
     <string name="username_hint">Username</string>
     <string name="password_hint">Password</string>
-    <string name="login_button">Login</string>
+    <string name="login">Login</string>
+
+    <string name="login_success">Success</string>
+    <string name="login_failed">Failure</string>
 </resources>
