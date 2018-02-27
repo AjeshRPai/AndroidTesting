@@ -8,7 +8,8 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/espresso_basics" />
+            <option value="$PROJECT_DIR$/espresso_recyclerview" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

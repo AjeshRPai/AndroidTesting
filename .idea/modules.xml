@@ -3,7 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AndroidTesting.iml" filepath="$PROJECT_DIR$/AndroidTesting.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/espresso_basics/espresso_basics.iml" filepath="$PROJECT_DIR$/espresso_basics/espresso_basics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/espresso_recyclerview/espresso_recyclerview2.iml" filepath="$PROJECT_DIR$/espresso_recyclerview/espresso_recyclerview2.iml" />
     </modules>
   </component>
 </project>
