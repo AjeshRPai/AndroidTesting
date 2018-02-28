@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AndroidTesting.iml" filepath="$PROJECT_DIR$/AndroidTesting.iml" />
       <module fileurl="file://$PROJECT_DIR$/espresso_basics/espresso_basics.iml" filepath="$PROJECT_DIR$/espresso_basics/espresso_basics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/espresso_custom_viewmatchers/espresso_custom_viewmatchers.iml" filepath="$PROJECT_DIR$/espresso_custom_viewmatchers/espresso_custom_viewmatchers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/espresso_recyclerview/espresso_recyclerview.iml" filepath="$PROJECT_DIR$/espresso_recyclerview/espresso_recyclerview.iml" />
       <module fileurl="file://$PROJECT_DIR$/espresso_recyclerview/espresso_recyclerview2.iml" filepath="$PROJECT_DIR$/espresso_recyclerview/espresso_recyclerview2.iml" />
     </modules>
   </component>

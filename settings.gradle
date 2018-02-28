@@ -1,1 +1,1 @@
-include ':espresso_basics', ':espresso_recyclerview'
+include ':espresso_basics', ':espresso_recyclerview', ':espresso_custom_viewmatchers'
