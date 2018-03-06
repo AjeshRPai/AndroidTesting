@@ -6,9 +6,6 @@ import org.hamcrest.Matcher
 import org.hamcrest.TypeSafeMatcher
 import org.junit.runner.Description
 
-/**
- * Created by ajeshpai on 28/02/18 @Cooey Technologies.
- */
 
 
 fun hasTextInputLayoutError(error:String):Matcher<View>{
@@ -30,8 +27,38 @@ fun hasTextInputLayoutError(error:String):Matcher<View>{
                 return false
             }
         }
-
     }
 }
+
+fun hasTextInputLayoutHint(hint:String):Matcher<View>{
+    return object:TypeSafeMatcher<View>(){
+        override fun describeTo(description: org.hamcrest.Description?) {
+
+        }
+
+        override fun matchesSafely(item: View?): Boolean {
+            item?.let {                        //if view is not null
+                return if(it is TextInputLayout) //if view is textinput layout
+                    it.hint?.let {   //run if the hint is not false
+                        return hint.equals(it)
+                    }?:kotlin.run {
+                        return false
+                    }
+                else false
+            }?:kotlin.run {
+                return false
+            }
+        }
+    }
+}
+
+fun Any?.ifNull(block: () -> Unit,null_block:()->Unit) {
+    this?.let {
+        block
+    }?:kotlin.run {
+        null_block
+    }
+}
+
 
 

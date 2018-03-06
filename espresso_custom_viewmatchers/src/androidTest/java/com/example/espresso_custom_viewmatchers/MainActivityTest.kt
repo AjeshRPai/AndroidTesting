@@ -14,9 +14,6 @@ import android.support.test.espresso.assertion.ViewAssertions
 import android.support.test.espresso.matcher.ViewMatchers
 import android.support.test.espresso.matcher.ViewMatchers.withId
 
-/**
- * Created by ajeshpai on 27/02/18 @Cooey Technologies.
- */
 
 
 @RunWith(AndroidJUnit4::class)

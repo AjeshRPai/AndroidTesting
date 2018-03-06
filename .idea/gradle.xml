@@ -10,6 +10,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/espresso_basics" />
             <option value="$PROJECT_DIR$/espresso_custom_viewmatchers" />
+            <option value="$PROJECT_DIR$/espresso_idlingresources" />
             <option value="$PROJECT_DIR$/espresso_recyclerview" />
           </set>
         </option>
