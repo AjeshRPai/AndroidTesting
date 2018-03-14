@@ -1,5 +1,7 @@
 package com.example.espresso_intents
 
+import android.app.Activity
+import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.v7.app.AppCompatActivity
@@ -13,9 +15,11 @@ class Main2Activity : AppCompatActivity() {
         setContentView(R.layout.activity_main2)
         setSupportActionBar(toolbar)
 
-        fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show()
+        fab.setOnClickListener {
+            val intent= Intent()
+            intent.putExtra(MainActivity.FIRST_DATA_KEY,"Second Activity")
+            setResult(Activity.RESULT_OK,intent)
+            finish()
         }
     }
 

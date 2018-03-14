@@ -46,7 +46,6 @@ class MainActivity_OnActivity_Result_Test {
         return IntentsTestRule(MainActivity::class.java)
     }
 
-
     @Test
      fun activityResult(){
         val testValue="MYTestValue"
@@ -75,16 +74,12 @@ class MainActivity_OnActivity_Result_Test {
     }
 
     private fun getResult(testValue:String): Instrumentation.ActivityResult {
-        // Create the ActivityResult, with a null Intent since we do not want to return any data
-        // back to the Activity.
         val resultData=Intent()
         resultData.putExtra(MainActivity.FIRST_DATA_KEY,testValue)
         return Instrumentation.ActivityResult(Activity.RESULT_OK, resultData)
     }
 
     private fun getNoResult(testValue:String): Instrumentation.ActivityResult {
-        // Create the ActivityResult, with a null Intent since we do not want to return any data
-        // back to the Activity.
         val resultData=Intent()
         resultData.putExtra(MainActivity.FIRST_DATA_KEY,testValue)
         return Instrumentation.ActivityResult(Activity.RESULT_CANCELED, resultData)
