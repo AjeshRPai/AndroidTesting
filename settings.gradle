@@ -1,1 +1,1 @@
-include ':espresso_basics', ':espresso_recyclerview', ':espresso_custom_viewmatchers', ':espresso_idlingresources'
+include ':espresso_basics', ':espresso_recyclerview', ':espresso_custom_viewmatchers', ':espresso_idlingresources', ':espresso_intents'

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">espresso_intents</string>
+    <string name="editmode">EditMode</string>
+    <string name="addmode">Add Mode</string>
+    <string name="sorry_no_result">Sorry We didnt get any result</string>
+    <string name="title_activity_main2">Main2Activity</string>
+</resources>

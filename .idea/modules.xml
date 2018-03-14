@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/espresso_basics/espresso_basics.iml" filepath="$PROJECT_DIR$/espresso_basics/espresso_basics.iml" />
       <module fileurl="file://$PROJECT_DIR$/espresso_custom_viewmatchers/espresso_custom_viewmatchers.iml" filepath="$PROJECT_DIR$/espresso_custom_viewmatchers/espresso_custom_viewmatchers.iml" />
       <module fileurl="file://$PROJECT_DIR$/espresso_idlingresources/espresso_idlingresources.iml" filepath="$PROJECT_DIR$/espresso_idlingresources/espresso_idlingresources.iml" />
+      <module fileurl="file://$PROJECT_DIR$/espresso_intents/espresso_intents.iml" filepath="$PROJECT_DIR$/espresso_intents/espresso_intents.iml" />
       <module fileurl="file://$PROJECT_DIR$/espresso_recyclerview/espresso_recyclerview.iml" filepath="$PROJECT_DIR$/espresso_recyclerview/espresso_recyclerview.iml" />
       <module fileurl="file://$PROJECT_DIR$/espresso_recyclerview/espresso_recyclerview2.iml" filepath="$PROJECT_DIR$/espresso_recyclerview/espresso_recyclerview2.iml" />
     </modules>
