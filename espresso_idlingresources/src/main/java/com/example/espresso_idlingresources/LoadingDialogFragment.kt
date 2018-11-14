@@ -22,7 +22,7 @@ class LoadingDialogFragment : DialogFragment() {
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
         handler.sendEmptyMessageDelayed(LoadingHandler.MSG_DISMISS, DELAY)
 
-        return AlertDialog.Builder(activity)
+        return AlertDialog.Builder(this.context!!)
                 .setTitle(R.string.loading)
                 .setMessage(R.string.please_wait)
                 .create()
